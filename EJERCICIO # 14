@@ -1,0 +1,21 @@
+Algoritmo InvertirNumero
+	// Definir las variables
+	Definir num, decenas, unidades, num_invertido Como Entero
+	
+	// Entrada de datos
+	Escribir "Ingrese un número de dos cifras (10-99):"
+	Leer num
+	
+	// Proceso
+	// 1. Obtener las decenas dividiendo por 10 y quitando los decimales
+	decenas <- trunc(num / 10)
+	
+	// 2. Obtener las unidades con el resto de la división
+	unidades <- num MOD 10
+	
+	// 3. Armar el nuevo número: las unidades pasan a ser decenas
+	num_invertido <- (unidades * 10) + decenas
+	
+	// Salida de resultados
+	Escribir "El número invertido es: ", num_invertido
+FinAlgoritmo
