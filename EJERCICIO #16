@@ -1,0 +1,25 @@
+Algoritmo TiempoDeEncuentro
+	// Definir las variables
+	Definir v1, v2, distancia, tiempo_horas, tiempo_minutos Como Real
+	
+	// Entrada de datos
+	Escribir "Ingrese la distancia entre los vehículos (km):"
+	Leer distancia
+	
+	Escribir "Ingrese la velocidad del vehículo más lento (km/h):"
+	Leer v1
+	
+	Escribir "Ingrese la velocidad del vehículo más rápido (km/h):"
+	Leer v2
+	
+	// Proceso
+	// 1. Calculamos el tiempo en horas (Distancia / Diferencia de velocidades)
+	// Usamos la resta para saber qué tan rápido se "acorta" la distancia
+	tiempo_horas <- distancia / (v2 - v1)
+	
+	// 2. Convertimos el tiempo de horas a minutos 
+	tiempo_minutos <- tiempo_horas * 60
+	
+	// Salida de resultados
+	Escribir "El vehículo más rápido alcanzará al otro en: ", tiempo_minutos, " minutos."
+FinAlgoritmo
