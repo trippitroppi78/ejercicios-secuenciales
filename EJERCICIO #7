@@ -1,0 +1,19 @@
+Algoritmo ConvertirMinutos
+	// Definir las variables
+	Definir total_minutos, horas, minutos_restantes Como Entero
+	
+	// Solicitar al usuario la cantidad de minutos
+	Escribir "Introduce la cantidad de minutos a convertir:"
+	Leer total_minutos
+	
+	// Realizar los cálculos
+	// La función trunc() nos da la parte entera de la división (las horas)
+	horas <- trunc(total_minutos / 60)
+	
+	// El operador MOD nos da el resto de la división (los minutos que sobran)
+	minutos_restantes <- total_minutos MOD 60
+	
+	// Mostrar el resultado
+	Escribir total_minutos, " minutos son ", horas, " horas y ", minutos_restantes, " minutos."
+	
+FinAlgoritmo
