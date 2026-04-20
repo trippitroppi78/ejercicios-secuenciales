@@ -1,0 +1,36 @@
+Algoritmo HoraLlegadaCiclista
+	// Definir variables de entrada y auxiliares (HH = horas) ( MM = minutos) ( SS = segundos)
+	Definir hh, mm, ss, tiempo_viaje Como Entero
+	Definir total_segundos_inicio, total_segundos_final Como Entero
+	Definir hh_llegada, mm_llegada, ss_llegada Como Entero
+	
+	// Entrada de datos
+	Escribir "Hora de salida (0-23):"
+	Leer hh
+	Escribir "Minutos de salida (0-59):"
+	Leer mm
+	Escribir "Segundos de salida (0-59):"
+	Leer ss
+	Escribir "Tiempo de viaje en segundos:"
+	Leer tiempo_viaje
+	
+	// Proceso
+	// 1. Convertir la hora de salida a segundos totales
+	total_segundos_inicio <- (hh * 3600) + (mm * 60) + ss
+	
+	// 2. Sumar el tiempo de viaje
+	total_segundos_final <- total_segundos_inicio + tiempo_viaje
+	
+	// 3. Convertir los segundos totales de vuelta a HH:MM:SS
+	// Usamos MOD 86400 para que si pasa de las 24 horas, vuelva a empezar en 0
+	total_segundos_final <- total_segundos_final MOD 86400
+	
+	hh_llegada <- trunc(total_segundos_final / 3600)
+	mm_llegada <- trunc((total_segundos_final MOD 3600) / 60)
+	ss_llegada <- total_segundos_final MOD 60
+	
+	// Salida de resultados
+	Escribir "La hora de llegada a la ciudad B es: "
+	Escribir hh_llegada, ":", mm_llegada, ":", ss_llegada
+	
+FinAlgoritmo
