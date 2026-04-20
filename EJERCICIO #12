@@ -1,0 +1,25 @@
+Algoritmo CalcularDistanciaEntrePuntos
+	// Definir las variables para las coordenadas y el resultado
+	Definir x1, y1, x2, y2, distancia Como Real
+	
+	// Entrada de datos del primer punto
+	Escribir "Punto 1:"
+	Escribir "Ingrese x1:"
+	Leer x1
+	Escribir "Ingrese y1:"
+	Leer y1
+	
+	// Entrada de datos del segundo punto
+	Escribir "Punto 2:"
+	Escribir "Ingrese x2:"
+	Leer x2
+	Escribir "Ingrese y2:"
+	Leer y2
+	
+	// Proceso: Aplicar la fórmula matemática
+	// (x2-x1)^2 + (y2-y1)^2 y luego raíz cuadrada
+	distancia <- RC((x2 - x1)^2 + (y2 - y1)^2)
+	
+	// Salida de resultados
+	Escribir "La distancia entre los dos puntos es: ", distancia
+FinAlgoritmo
