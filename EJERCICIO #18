@@ -1,0 +1,19 @@
+Algoritmo MostrarIniciales
+	Definir nombre, apellido1, apellido2 Como Caracter
+	Definir in1, in2, in3 Como Caracter
+	
+	Escribir "Introduce tu nombre:"
+	Leer nombre
+	Escribir "Introduce tu primer apellido:"
+	Leer apellido1
+	Escribir "Introduce tu segundo apellido:"
+	Leer apellido2
+	
+	
+	in1 <- Subcadena(nombre, 1, 1)
+	in2 <- Subcadena(apellido1, 1, 1)
+	in3 <- Subcadena(apellido2, 1, 1)
+	
+
+	Escribir "Las iniciales son: ", Mayusculas(in1), Mayusculas(in2), Mayusculas(in3)
+FinAlgoritmo
