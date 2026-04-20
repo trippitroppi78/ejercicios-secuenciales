@@ -1,0 +1,19 @@
+Algoritmo CalculoDescuento
+    // Definir las variables
+    Definir total_compra, descuento, pago_final Como Real
+    
+    // Entrada de datos
+    Escribir "Ingrese el total de la compra:"
+    Leer total_compra
+    
+    // Proceso
+    // Calcular el valor del descuento (15%)
+    descuento <- total_compra * 0.15
+    
+    // Resta del descuento al total original
+    pago_final <- total_compra - descuento
+    
+    // Salida de resultados
+    Escribir "El descuento aplicado es de: $", descuento
+    Escribir "El monto final a pagar es: $", pago_final
+FinAlgoritmo
