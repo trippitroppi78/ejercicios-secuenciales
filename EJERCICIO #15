@@ -1,0 +1,26 @@
+	// Definir las variables
+	Definir A, B, aux Como Real
+	
+	// Entrada de datos
+	Escribir "Ingrese el valor de la variable A:"
+	Leer A
+	Escribir "Ingrese el valor de la variable B:"
+	Leer B
+	
+	Escribir "Valores iniciales: A = ", A, " y B = ", B
+	
+	// Proceso: 
+	// 1. Guardamos el valor de A en una variable auxiliar
+	aux <- A
+	
+	// 2. Ahora que A está a salvo, podemos darle el valor de B
+	A <- B
+	
+	// 3. Finalmente, le damos a B el valor que guardamos en aux (el original de A)
+	B <- aux
+	
+	// Salida de resultados
+	Escribir "--- Tras el intercambio ---"
+	Escribir "El valor de A ahora es: ", A
+	Escribir "El valor de B ahora es: ", B
+FinAlgoritmo
