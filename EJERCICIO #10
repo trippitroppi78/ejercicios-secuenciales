@@ -1,0 +1,21 @@
+Leer parcial
+	
+	// Entrada de datos: Examen y Trabajo
+	Escribir "Ingrese la calificación del examen final:"
+	Leer examen_final
+	Escribir "Ingrese la calificación del trabajo final:"
+	Leer trabajo_final
+	
+	// Proceso
+	// 1. Calcular el promedio de los tres parciales
+	promedio_parciales <- (parcial1 + parcial2 + parcial3) / 3
+	
+	// 2. Aplicar los porcentajes correspondientes
+	// 55% parciales + 30% examen + 15% trabajo
+	nota_final <- (promedio_parciales * 0.55) + (examen_final * 0.30) + (trabajo_final * 0.15)
+	
+	// Salida de resultados
+	Escribir "El promedio de parciales es: ", promedio_parciales
+	Escribir "La calificación final de la materia es: ", nota_final
+	
+FinAlgoritmo
